@@ -1,18 +1,22 @@
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?color=gree&label=Github)](https://github.com/HoodedUnicorn/Python-FPS-Monitor/releases)
+[![npm (scoped)](https://img.shields.io/npm/v/@hoodedunicorn/python-fps-monitor?color=red)](https://www.npmjs.com/package/python-fps-monitor)
+
+
 # Python FPS and System Monitor
 
 This is a Python script that uses the Pygame library to display the current FPS (frames per second) and system information such as GPU usage and CPU usage in a resizable window.
 <br>
 <h1>Dependencies</h1>
 
-   * Pygame
-   * Psutil
-   * Gpustat
+* Pygame
+* Psutil
+* Gpustat
 
 <h1>Installation</h1>
 
- 1. Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
- 2. Download and clone the script by `git clone https://github.com/HoodedUnicorn/Python-FPS-Monitor.git` <br>
- 3. Run the script using `python FPS-Monitor.py`
+1. Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
+2. Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
+3. Run the script using `python FPS-Monitor.py`
 
 <h1>Usage</h1>
 
@@ -30,3 +34,13 @@ This script is only compatible with NVidia GPUs. It will not work with other typ
 Conclusion
 
 This script is a useful tool for monitoring the performance of your system while running resource-intensive applications such as games or video editing software. It is easy to install and customize, making it a valuable addition to any developer or gamer's toolbox.
+
+<h1>Versions</h1>
+
+<h3>FPS Monitor version 1.0.1</h3>
+
+![fpsmon101](https://user-images.githubusercontent.com/68126304/215294225-68794013-7587-4482-b29c-59bf37cabce5.PNG)
+
+<h3>FPS Monitor version 1.0.0</h3>
+
+![fpsmon100](https://user-images.githubusercontent.com/68126304/215294191-982f19c5-c9e5-441d-8929-cf3a4285fc5f.PNG)
