@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 /.idea/
+/.github/
 .gitignore
 Python-FPS-Monitor.iml
 /venv/
