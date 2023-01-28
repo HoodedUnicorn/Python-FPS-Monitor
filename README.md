@@ -1,3 +1,6 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?sort=semver)
+
+
 # Python FPS and System Monitor
 
 This is a Python script that uses the Pygame library to display the current FPS (frames per second) and system information such as GPU usage and CPU usage in a resizable window.
