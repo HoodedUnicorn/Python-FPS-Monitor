@@ -1,9 +1,10 @@
 # Versions
 
 <h3>FPS Monitor version 1.1.0-alpha</h3>
-!image not yet uploaded
 
-<h3>FPS Monitor version 1.0.1</h3>
+![fpsmon105test](https://user-images.githubusercontent.com/68126304/215353466-e50d1cab-990d-4768-90bb-25021e2e2c24.PNG)
+
+<h3>FPS Monitor versions 1.0.1 - 1.0.4</h3>
 
 ![fpsmon101](https://user-images.githubusercontent.com/68126304/215294225-68794013-7587-4482-b29c-59bf37cabce5.PNG)
 
