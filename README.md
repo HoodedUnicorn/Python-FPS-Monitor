@@ -14,8 +14,6 @@ This is a Python script that uses the Pygame library to display the current FPS 
 
 <h2>Installation :computer: </h2>
 
-<h3>Install via NPM packages :factory:</h3>
-<h2>Installation :computer: </h2>
 
 <h3>Install via NPM packages :factory:</h3>
 
