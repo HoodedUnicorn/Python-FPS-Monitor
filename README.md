@@ -1,4 +1,4 @@
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?color=gree&label=Github)](https://github.com/HoodedUnicorn/Python-FPS-Monitor/Releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?color=gree&label=Github)](https://github.com/HoodedUnicorn/Python-FPS-Monitor/releases)
 [![npm (scoped)](https://img.shields.io/npm/v/@hoodedunicorn/python-fps-monitor?color=red)](hhttps://www.npmjs.com/package/@hoodedunicorn/python-fps-monitor)
 
 
