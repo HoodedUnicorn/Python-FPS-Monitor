@@ -37,6 +37,9 @@ To exit the script, simply close the window or press the 'X' button in the top r
 You can customize the script to display additional information such as GPU memory usage or CPU temperature. You can also change the font, text color and background color of the window to match your personal preferences.
 <br>
 
+Currently in testing: Color changing depending on having AMD or Intel. 
+AMD goes red, while Intel goes blue
+
 <h2>Limitations :warning: </h2>
 
 This script is only compatible with NVidia GPUs. It will not work with other types of GPUs such as AMD or Intel. Additionally, it will only display information for the first GPU it detects. If you have multiple GPUs installed, you will need to modify the script to display information for all of them.
