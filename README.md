@@ -15,10 +15,14 @@ This is a Python script that uses the Pygame library to display the current FPS 
 <h2>Installation :computer: </h2>
 
 <h3>Install via NPM packages :factory:</h3>
+<h2>Installation :computer: </h2>
 
-* Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
-* Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
-* Run the script using `python FPS-Monitor.py`
+<h3>Install via NPM packages :factory:</h3>
+
+ * Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
+ * Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
+ * Run the script using `python FPS-Monitor.py`
+
 
 
 <h2>Usage :movie_camera: </h2>
