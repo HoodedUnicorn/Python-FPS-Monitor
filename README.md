@@ -32,7 +32,12 @@ You can resize the window to your desired size by clicking and dragging the edge
 
 To exit the script, simply close the window or press the 'X' button in the top right corner of the window.
 
-<h2>Additional Features :space_invader: </h2>
+<h2>Limitations :warning: </h2>
+
+This script is only compatible with NVidia GPUs. It will not work with other types of GPUs such as AMD or Intel. Additionally, it will only display information for the first GPU it detects. If you have multiple GPUs installed, you will need to modify the script to display information for all of them.
+
+
+<h2>Features :space_invader: </h2>
 
 You can customize the script to display additional information such as GPU memory usage or CPU temperature. You can also change the font, text color and background color of the window to match your personal preferences.
 <br>
@@ -40,13 +45,26 @@ You can customize the script to display additional information such as GPU memor
 Currently in testing: Color changing depending on having AMD or Intel. 
 AMD goes red, while Intel goes blue
 
-<h2>Limitations :warning: </h2>
+<h2>Roadmap :calendar: </h2>
 
-This script is only compatible with NVidia GPUs. It will not work with other types of GPUs such as AMD or Intel. Additionally, it will only display information for the first GPU it detects. If you have multiple GPUs installed, you will need to modify the script to display information for all of them.
+:heavy_check_mark: = Implemented
+:recycle: = In testing
+:memo: = Working on it
+:x: = Not yet available
+
+| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
+| ---- | ---- | 
+| RAM stats & usage | :heavy_check_mark: |
+| CPU stats color AMD or Intel | :recycle: |  
+| CPU temps and GPU Memory usage | :memo: |
+| Accessible for all GPU's | :x: |
+| Be an Overlay | :x: |
+
 
 <h2>Conclusion :rocket:</h2>
 
 This script is a useful tool for monitoring the performance of your system while running resource-intensive applications such as games or video editing software. It is easy to install and customize, making it a valuable addition to any developer or gamer's toolbox.
+
 
 <h2>Versions :pizza:</h2>
 
