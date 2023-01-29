@@ -1,4 +1,6 @@
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?sort=semver)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?color=gree&label=Github)](https://github.com/HoodedUnicorn/Python-FPS-Monitor/releases)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@hoodedunicorn/python-fps-monitor?color=red)](https://www.npmjs.com/package/python-fps-monitor)
 
 
 # Python FPS and System Monitor
@@ -14,7 +16,7 @@ This is a Python script that uses the Pygame library to display the current FPS 
 <h1>Installation</h1>
 
  1. Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
- 2. Install package via NPM package manager `npm install @hoodedunicorn/python-fps-monitor@1.0.1` <br>
+ 2. Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
  3. Run the script using `python FPS-Monitor.py`
 
 <h1>Usage</h1>
