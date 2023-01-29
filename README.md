@@ -14,9 +14,9 @@ This is a Python script that uses the Pygame library to display the current FPS 
 
 <h1>Installation</h1>
 
-1. Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
-2. Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
-3. Run the script using `python FPS-Monitor.py`
+ 1. Install the dependencies by running `pip install pygame psutil gpustat` in the command line. <br>
+ 2. Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
+ 3. Run the script using `python FPS-Monitor.py`
 
 <h1>Usage</h1>
 
