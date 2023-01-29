@@ -1,84 +1,86 @@
-import platform
-
 import pygame
 import sys
 import psutil
 import gpustat
-from GPUtil import GPUtil
+import cpuinfo
+
+
+pygame.init()
+height = 700
+width = 300
+screen = pygame.display.set_mode((height, width))
+clock = pygame.time.Clock()
+font = pygame.font.SysFont("Century Gothic", 16)
 
 
 def fpsrun():
     fps = str(int(clock.get_fps()))
-    fps_text = font.render(fps, 1, pygame.Color("white"))
+    fps_text = font.render("FPS: " + fps, 1, pygame.Color("white"))
     return fps_text
 
 
-class SystemInfo:
-    def __init__(self):
-        self.gpu_usage = None
-        self.gpu_name = None
-        self.cpu_usage = None
-        self.cpu_name = None
-
-
-sys_info = SystemInfo()
-
-# Get GPU usage and name
-gpu_percent = GPUtil.getGPUs()[0].load
-sys_info.gpu_usage = gpu_percent
-sys_info.gpu_name = GPUtil.getGPUs()[0].name
-
-# Get CPU usage and name
-sys_info.cpu_usage = psutil.cpu_percent()
-sys_info.cpu_name = platform.processor()
-
-# Print the information
-print("GPU: ", sys_info.gpu_name, " Usage: ", sys_info.gpu_usage, "%")
-print("CPU: ", sys_info.cpu_name, " Usage: ", sys_info.cpu_usage, "%")
-
-
 def get_cpu_usage():
+    cpu_info = cpuinfo.get_cpu_info()['brand_raw']
     cpu_usage = psutil.cpu_percent()
-    return str(cpu_usage) + "%"
 
+    if 'AMD' in cpu_info:
+        color = pygame.Color("red")
+    elif 'Intel' in cpu_info:
+        color = pygame.Color("blue")
+    else:
+        color = pygame.Color("white")
+
+    cpu_usage_text = font.render("CPU Usage: " + str(cpu_usage) + "%", 1, color)
+    return cpu_usage_text
 
 def get_cpu_name():
-    # Get CPU information
-    cpu_percent = psutil.cpu_percent()
-    cpu_name = psutil.cpu_freq().name
-    logical_cpus = psutil.cpu_count()
-    physical_cpus = psutil.cpu_count(logical=False)
+    cpu_name = cpuinfo.get_cpu_info()['brand_raw']
+    if 'AMD' in cpu_name:
+        cpu_name_text = font.render("CPU Name: " + cpu_name, 1, pygame.Color("red"))
+    elif 'Intel' in cpu_name:
+        cpu_name_text = font.render("CPU Name: " + cpu_name, 1, pygame.Color("blue"))
+    else:
+        cpu_name_text = font.render("CPU Name: " + cpu_name, 1, pygame.Color("white"))
+    return cpu_name_text
 
 
 def get_gpu_usage():
     gpu_stats = gpustat.GPUStatCollection.new_query()
     gpu_usage = gpu_stats.gpus[0].utilization
-    return str(gpu_usage) + "%"
+    gpu_usage_text = font.render("GPU Usage: " + str(gpu_usage) + "%", 1, pygame.Color("green"))
+    return gpu_usage_text
 
 
-pygame.init()
-height = 700
-width = 150
-screen = pygame.display.set_mode((height, width))
-# screen = pygame.display.set_mode((height,width),pygame.RESIZABLE)
-clock = pygame.time.Clock()
-font = pygame.font.SysFont("Century Gothic", 16)
+def get_gpu_name():
+    gpu_stats = gpustat.GPUStatCollection.new_query()
+    gpu_name = gpu_stats.gpus[0].name
+    gpu_name_text = font.render("GPU Name: " + gpu_name, 1, pygame.Color("green"))
+    return gpu_name_text
 
-gpu_usage_text = font.render(get_gpu_usage(), 1, pygame.Color("white"))
-screen.blit(gpu_usage_text, (60, 50))
-cpu_usage_text = font.render(get_cpu_usage(), 1, pygame.Color("white"))
-screen.blit(cpu_usage_text, (60, 100))
 
-i = 0
-while i <= 10:
-    screen.fill((0, 0, 0))
-    gpu_usage_text = font.render("GPU: " + sys_info.gpu_name + " Usage: " + str(sys_info.gpu_usage) + "%", True, (255, 255, 255))
-    cpu_usage_text = font.render("CPU: " + sys_info.cpu_name + " Usage: " + str(sys_info.cpu_usage) + "%", True, (255, 255, 255))
-    screen.blit(fpsrun(), (60, 50))
-    screen.blit(gpu_usage_text, (60, 80))
-    screen.blit(cpu_usage_text, (60, 110))
+def get_ram_info():
+    ram_info = psutil.virtual_memory()
+    return "Total RAM: " + str(ram_info.total // (1024**2)) + "MB"
+
+
+def get_ram_usage():
+    ram_usage = psutil.virtual_memory().percent
+    return str(ram_usage) + "%"
+
+
+while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            pygame.quit()
             sys.exit()
-    clock.tick(60)
+    screen.fill(pygame.Color("black"))
+    screen.blit(fpsrun(), (20, 20))
+    screen.blit(get_cpu_name(), (20, 50))
+    screen.blit(get_cpu_usage(), (20, 70))
+    screen.blit(get_gpu_name(), (20, 100))
+    screen.blit(get_gpu_usage(), (20, 120))
+    screen.blit(font.render("RAM Info: " + get_ram_info(), 1, pygame.Color("orange")), (20, 150))
+    screen.blit(font.render("RAM Usage: " + get_ram_usage(), 1, pygame.Color("orange")), (20, 170))
+
     pygame.display.update()
+    clock.tick(60)
