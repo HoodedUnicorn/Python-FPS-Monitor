@@ -50,7 +50,7 @@ This script is a useful tool for monitoring the performance of your system while
 
 <h2>Versions :pizza:</h2>
 
-To see previous versions [click me](Versions.md), 
+To see versions [click me](Versions.md), 
 
 to download a previous release [click here](releases)
 
