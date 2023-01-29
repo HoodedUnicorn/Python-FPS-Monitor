@@ -22,7 +22,6 @@ This is a Python script that uses the Pygame library to display the current FPS 
  * Run the script using `python FPS-Monitor.py`
 
 
-
 <h2>Usage :movie_camera: </h2>
 
 The script will display the current FPS in the top left corner of the window. The GPU and CPU usage will be displayed on the right side of the window.
