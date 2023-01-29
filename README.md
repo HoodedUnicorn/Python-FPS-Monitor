@@ -45,7 +45,7 @@ You can customize the script to display additional information such as GPU memor
 Currently in testing: Color changing depending on having AMD or Intel. 
 AMD goes red, while Intel goes blue
 
-<h2>Roadmap :calendar: </h2>
+<h2>Roadmap :calendar: (subject to change)</h2>
 
 :heavy_check_mark: = Implemented
 :recycle: = In testing
