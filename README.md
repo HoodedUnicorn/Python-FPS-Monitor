@@ -72,3 +72,9 @@ To see versions [click me](Versions.md),
 
 to download a previous release [click here](releases)
 
+<h2>Bugs</h2>
+
+| Issue | Resolved? |
+| ---- | ---- |
+| Window is very slow to change position | :x: |
+| FPS is not shown correctly | :x: |
