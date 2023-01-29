@@ -72,7 +72,7 @@ To see versions [click me](Versions.md),
 
 to download a previous release [click here](releases)
 
-<h2>Bugs</h2>
+<h2>Bugs :bug:</h2>
 
 | Issue | Resolved? |
 | ---- | ---- |
