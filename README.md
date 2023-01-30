@@ -24,28 +24,50 @@ This is a Python script that uses the Pygame library to display the current FPS 
  * Run the script using `python FPS-Monitor.py`
 
 
-<h2>Usage :movie_camera: </h2>
-
-The script will display the current FPS in the top left corner of the window. The GPU and CPU usage will be displayed on the right side of the window.
-
-You can resize the window to your desired size by clicking and dragging the edges of the window.
-
-To exit the script, simply close the window or press the 'X' button in the top right corner of the window.
-
-<h2>Additional Features :space_invader: </h2>
-
-You can customize the script to display additional information such as GPU memory usage or CPU temperature. You can also change the font, text color and background color of the window to match your personal preferences.
-<br>
-
 <h2>Limitations :warning: </h2>
 
 This script is only compatible with NVidia GPUs. It will not work with other types of GPUs such as AMD or Intel. Additionally, it will only display information for the first GPU it detects. If you have multiple GPUs installed, you will need to modify the script to display information for all of them.
+
+
+<h2>Features :space_invader: </h2>
+This code is a Python script that uses Pygame, sys, psutil, gpustat, and cpuinfo libraries to display system information in a graphical interface. The code initializes the Pygame library, sets the height and width of the window, and sets up a font for text display. <br>
+<br>
+The script has several functions that are responsible for getting specific system information and returning text in the form of a Pygame surface. The fpsrun() function returns the current FPS value as text. <br>
+<br> The get_cpu_usage() function returns the CPU usage percentage, along with the CPU name, in text format with different colors depending on whether the CPU is from AMD, Intel, or any other brand. <br>
+<br> The get_gpu_usage() and get_gpu_name() functions return the GPU usage percentage and name in text format with green color. The get_ram_info() and get_ram_usage() functions return the total RAM and the RAM usage percentage in text format with orange color.
+
+<br> In the main loop, the script listens for Pygame quit events, updates the screen with the system information, and updates the display 60 times per second. The script displays the FPS value, CPU name, CPU usage, GPU name, GPU usage, total RAM, and RAM usage on the screen.
+
+<h2>Roadmap :calendar: (subject to change)</h2>
+
+:heavy_check_mark: = Implemented
+:recycle: = In testing
+:memo: = Working on it
+:x: = Not yet available / Can't be implemente
+
+| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
+| ---- | ---- | 
+| RAM stats & usage | :heavy_check_mark: |
+| CPU stats color AMD or Intel | :x: Scrapped in Testing - Too intensive, borked FPS|  
+| CPU temps and GPU Memory usage | :memo: |
+| Accessible for all GPU's | :x: |
+| Be an Overlay | :memo: |
+
 
 <h2>Conclusion :rocket:</h2>
 
 This script is a useful tool for monitoring the performance of your system while running resource-intensive applications such as games or video editing software. It is easy to install and customize, making it a valuable addition to any developer or gamer's toolbox.
 
+
 <h2>Versions :pizza:</h2>
 
-See Versions.md for Versions (link coming soon)
+To see versions [click me](Versions.md), 
 
+to download a previous release [click here](releases)
+
+<h2>Bugs :bug:</h2>
+
+| Issue | Resolved? |
+| ---- | ---- |
+| Window is very slow to change position | :heavy_check_mark: 30/01/2023 EU |
+| FPS is not shown correctly | :heavy_check_mark: 30/01/2023 EU |
