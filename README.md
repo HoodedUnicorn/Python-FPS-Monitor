@@ -45,4 +45,7 @@ This script is only compatible with NVidia GPUs. It will not work with other typ
 
 This script is a useful tool for monitoring the performance of your system while running resource-intensive applications such as games or video editing software. It is easy to install and customize, making it a valuable addition to any developer or gamer's toolbox.
 
-[<h2>Versions :pizza:</h2>](Versions.md)
+<h2>Versions :pizza:</h2>
+
+See Versions.md for Versions (link coming soon)
+
