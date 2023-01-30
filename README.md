@@ -44,14 +44,15 @@ The script has several functions that are responsible for getting specific syste
 :recycle: = In testing
 :memo: = Working on it
 :x: = Not yet available
+:no_good: = "variable Reason"
 
-| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
+| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:/:no_good:|
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
-| CPU stats color AMD or Intel | :recycle: |  
+| CPU stats color AMD or Intel | :x: Scrapped in Testing - Too intensive, borked FPS|  
 | CPU temps and GPU Memory usage | :memo: |
 | Accessible for all GPU's | :x: |
-| Be an Overlay | :x: |
+| Be an Overlay | :memo: |
 
 
 <h2>Conclusion :rocket:</h2>
@@ -69,5 +70,5 @@ to download a previous release [click here](releases)
 
 | Issue | Resolved? |
 | ---- | ---- |
-| Window is very slow to change position | :x: |
-| FPS is not shown correctly | :x: |
+| Window is very slow to change position | :heavy_check_mark: 30/01/2023 EU |
+| FPS is not shown correctly | :heavy_check_mark: 30/01/2023 EU |
