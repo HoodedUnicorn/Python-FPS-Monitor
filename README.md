@@ -43,10 +43,9 @@ The script has several functions that are responsible for getting specific syste
 :heavy_check_mark: = Implemented
 :recycle: = In testing
 :memo: = Working on it
-:x: = Not yet available
-:no_good: = "variable Reason"
+:x: = Not yet available / Can't be implemente
 
-| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:/:no_good:|
+| Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
 | CPU stats color AMD or Intel | :x: Scrapped in Testing - Too intensive, borked FPS|  
