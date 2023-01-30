@@ -10,8 +10,6 @@ This is a Python script that uses the Pygame library to display the current FPS 
 
 * Pygame
 * Psutil
-* Gpustat
-* cpuinfo
 * sys
 
 <h2>Installation :computer: </h2>
@@ -19,7 +17,7 @@ This is a Python script that uses the Pygame library to display the current FPS 
 
 <h3>Install via NPM packages :factory:</h3>
 
- * Install the dependencies by running `pip install pygame psutil gpustat cpuinfo` in the command line. <br>
+ * Install the dependencies by running `pip install pygame psutil` in the command line. <br>
  * Install package via NPM package manager `npm i @hoodedunicorn/python-fps-monitor` <br>
  * Run the script using `python FPS-Monitor.py`
 
