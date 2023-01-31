@@ -1,6 +1,6 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HoodedUnicorn/Python-FPS-Monitor?color=gree&label=Github)](https://github.com/HoodedUnicorn/Python-FPS-Monitor/releases)
 [![npm (scoped)](https://img.shields.io/npm/v/@hoodedunicorn/python-fps-monitor?color=red)](https://www.npmjs.com/package/@hoodedunicorn/python-fps-monitor)
-![npm](https://img.shields.io/npm/dt/@hoodedunicorn/python-fps-monitor?color=red&label=npm%20downloads)
+[![npm](https://img.shields.io/npm/dt/@hoodedunicorn/python-fps-monitor?color=red&label=npm%20downloads)](https://www.npmjs.com/package/@hoodedunicorn/python-fps-monitor)
 
 # Python FPS and System Monitor :video_game:
 
