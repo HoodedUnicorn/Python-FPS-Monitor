@@ -11,6 +11,7 @@ This is a Python script that uses the Pygame library to display the current FPS 
 * Pygame
 * Psutil
 * sys
+* And more (after testing)
 
 <h2>Installation :computer: </h2>
 
@@ -41,15 +42,15 @@ The script has several functions that are responsible for getting specific syste
 :heavy_check_mark: = Implemented
 :recycle: = In testing
 :memo: = Working on it
-:x: = Not yet available / Can't be implemente
+:x: = Not yet available / Can't be implemented
 
 | Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
-| CPU stats color AMD or Intel | :x: Scrapped in Testing - Too intensive, borked FPS|  
-| CPU temps and GPU Memory usage | :memo: |
-| Accessible for all GPU's | :x: |
-| Be an Overlay | :memo: |
+| CPU stats color AMD or Intel | :recycle: Working on it |  
+| CPU temps and GPU Memory usage | :recycle: GPU Memory Usage ready |
+| Accessible for all GPUs | :x: |
+| Be an Overlay | :heavy_check_mark: Coming with 2.0.0|
 
 
 <h2>Conclusion :rocket:</h2>
@@ -69,3 +70,4 @@ to download a previous release [click here](releases)
 | ---- | ---- |
 | Window is very slow to change position | :heavy_check_mark: 30/01/2023 EU |
 | FPS is not shown correctly | :heavy_check_mark: 30/01/2023 EU |
+| FPS only shows overlay | :recycle: working on it |
