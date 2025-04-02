@@ -11,7 +11,12 @@ This is a Python script that uses the Pygame library to display the current FPS 
 * Pygame
 * Psutil
 * sys
-* And more (after testing)
+* win32api
+* win32gui
+* win32con
+* time
+* GPUtil
+* wmi
 
 <h2>Installation :computer: </h2>
 
@@ -48,7 +53,7 @@ The script has several functions that are responsible for getting specific syste
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
 | CPU stats color AMD or Intel | :recycle: Working on it |  
-| CPU temps and GPU Memory usage | :recycle: GPU Memory Usage ready |
+| CPU temps and GPU Memory usage | :heavy_check_mark: |
 | Accessible for all GPUs | :x: |
 | Be an Overlay | :heavy_check_mark: Coming with 2.0.0|
 
@@ -71,3 +76,4 @@ to download a previous release [click here](releases)
 | Window is very slow to change position | :heavy_check_mark: 30/01/2023 EU |
 | FPS is not shown correctly | :heavy_check_mark: 30/01/2023 EU |
 | FPS only shows overlay | :recycle: working on it |
+| No FPS shown | :recycle: working on it |
