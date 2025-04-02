@@ -47,15 +47,17 @@ The script has several functions that are responsible for getting specific syste
 :heavy_check_mark: = Implemented
 :recycle: = In testing
 :memo: = Working on it
-:x: = Not yet available / Can't be implemented
+:x: = Can't be implemented
+📆 = For future releases
 
 | Feature | :heavy_check_mark:/:recycle:/:memo:/:x:|
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
-| CPU stats color AMD or Intel | :recycle: Working on it |  
+| CPU stats color AMD or Intel | :memo: |  
 | CPU temps and GPU Memory usage | :heavy_check_mark: Coming with 2.0.0 |
 | Accessible for all GPUs | :x: |
 | Be an Overlay | :heavy_check_mark: Coming with 2.0.0|
+| Automatic Game Detection | 📆 |
 
 
 <h2>Conclusion :rocket:</h2>
@@ -75,5 +77,5 @@ to download a previous release [click here](releases)
 | ---- | ---- |
 | Window is very slow to change position | :heavy_check_mark: 30/01/2023 EU |
 | FPS is not shown correctly | :heavy_check_mark: 30/01/2023 EU |
-| FPS only shows overlay | :recycle: working on it |
-| No FPS shown | :recycle: working on it |
+| FPS only shows overlay | :memo: working on it |
+| No FPS shown | :memo: working on it |
