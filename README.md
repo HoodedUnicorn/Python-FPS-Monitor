@@ -17,6 +17,7 @@ This is a Python script that uses the Pygame library to display the current FPS 
 * time
 * GPUtil
 * wmi
+* OpenHardwareMonitor
 
 <h2>Installation :computer: </h2>
 
