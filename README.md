@@ -53,7 +53,7 @@ The script has several functions that are responsible for getting specific syste
 | ---- | ---- | 
 | RAM stats & usage | :heavy_check_mark: |
 | CPU stats color AMD or Intel | :recycle: Working on it |  
-| CPU temps and GPU Memory usage | :heavy_check_mark: |
+| CPU temps and GPU Memory usage | :heavy_check_mark: Coming with 2.0.0 |
 | Accessible for all GPUs | :x: |
 | Be an Overlay | :heavy_check_mark: Coming with 2.0.0|
 
